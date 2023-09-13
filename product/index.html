@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <style>
+body {
+     margin: 0;
+     padding: 0;
+     text-align: center;
+}
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    main {
+      overflow: hidden;
+      border-radius: 0.75rem;
+      max-width: 28rem;
+      background-color: #ffffff;
+      margin: 0px auto;
+      margin-top: 10% ;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+      @media (min-width: 768px) {
+        max-width: 768px;
+      }
+    }
+    .content {
+      @media (min-width: 768px) {
+        display: flex;
+      }
+    }
+
+    .image-content {
+      @media (min-width: 768px) {
+        shrink: 0;
+      }
+    }
+
+    .shopping-content {
+      padding: 32px;
+    }
+
+    img {
+      height: 186px;
+      width: 100%;
+      object-fit: cover;
+
+      @media (min-width: 768px) {
+        width: 25rem;
+        height: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <div class="content">
+      <div class="image-content">
+        <img src="/product/images/image-product-desktop.jpg" alt="">
+        <img style="display: none" src="/product/images/image-product-desktop.jpg" alt="">
+      </div>
+      <div class="shopping-content">
+        <span>perfume</span>
+        <h1>Gabrielle Essence Eau De Parfum</h1>
+        <p>A floral, solar and voluptuous interpretation composed by olivier Polge, Perfumer-Creator for the house of
+          CHANEL.</p>
+        $149.99
+        $169.99
+        <button> Add to Cart
+        </button>
+      </div>
+    </div>
+  </main>
+
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Ali Yagiz Mumcu</a>.
+  </div>
+</body>
+
+</html>
